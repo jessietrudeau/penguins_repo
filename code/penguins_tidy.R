@@ -139,8 +139,8 @@ species_table <- penguins_raw |>
 library(knitr)
 library(kableExtra)
 
-knitr::kable(species_table, format == "markdown", caption = "N Penguins by Species") |> 
-  save_kable("species_table.pdf")
+knitr::kable(species_table, format = "html", caption = "N Penguins by Species") |> 
+  save_kable("species_table.html")
 
 
 
